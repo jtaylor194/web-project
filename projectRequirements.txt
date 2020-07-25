@@ -1,0 +1,40 @@
+Map each activity of your projects to phases:
+    - Project Idea
+    - Prototype Design
+    - HTML and CSS Implementation
+    - JavaScript Implementation
+    - PHP/DB Implementation
+
+Project Proposal
+Describe the project as a simple problem
+Give your solution proposal
+Technology stack you want to use
+Maximum 3 pages
+(15 Points)
+
+Project Prototype:
+Diagrams of Frontend layout,  Screens and any user input data forms
+Backend (Database) design
+Functionality of the application as a list 
+Eg. Login screen will be provided, User can register and get updates
+Use power point or slides to show each screen or free hand drawing is acceptable as long as we can see clearly what the screen represents
+(15 Points)
+
+Coding
+Working model 
+Map pages/modules to what was discussed in class
+E.g. HTML pages (4) , Calling PHP pages from HTML (4) , PHP pages for functions(1), DB connection/DB activity pages (4) 
+(40 Points)
+
+Walkthrough Video
+Application demo
+Start to end via a video recording you talking and showing the functionality
+If functionality is not working you need to mention which function is not working and why
+Maximum 5 minute 
+(25 Points)
+
+Project Documentation
+All the files , documents used should be zipped and placed in your iCollege Project folder under assignments
+Instructions how to use it, any db setup or hardware configuration needed should be added to documentation
+(10 Points)
+
