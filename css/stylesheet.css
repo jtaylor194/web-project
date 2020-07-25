@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-style: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: lightseagreen;
+    margin: 0;
+    padding: 5px 5px 5px 5px;;
+
+}
+
+.navBar{
+    overflow: hidden;
+    background-color: cornflowerblue;
+}
+.navBar a {
+    float: right;
+    display: flex;
+    color: #210358;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+.navBar h2{
+    float: left;
+    display: flex;
+    color: white;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.navBar a:hover{
+    background-color: lightcyan;
+    color: darkslategray;
+    transition-duration: .5s;
+    transition-delay: .1s;
+}
+  
+
+  ul > li{
+    color: white;
+  }
+  section.loginUser{
+    display: block;
+    justify-content: center;
+    width: 500px;
+    border: solid white;
+  }
+  .register{
+    border: darkblue solid 5px;
+    padding-bottom: 20px;
+  }
+  .container{
+    padding-top: 100px;
+  }
