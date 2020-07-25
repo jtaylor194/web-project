@@ -19,6 +19,14 @@ body{
     padding: 14px;
     text-decoration: none;
   }
+.navBar h2{
+    float: left;
+    display: flex;
+    color: white;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
 .navBar a:hover{
     background-color: lightcyan;
     color: purple;
