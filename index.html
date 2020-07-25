@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Hand and Foot</title>
 </head>
 <body>
@@ -16,18 +17,21 @@
         <a href="info.html">About Me</a>
         <h2 id="logo">Hand and Foot</h2>
     </div>
-    <div class="player-form">
-        <p>Please fill out your player card</p>
+    <section class="player-form">
         <form>
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" class="form-control" id="username" placeholder="Username">
-                <small id="userInfo" class="form-text text-muted">Pick a user name for yourself. (max 30 ch)
-                </small>
-
-            </div>
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" class="form-control" name="username" id="username" aria-describedby="helpId" placeholder="Enter username...">
+          <small id="helpId" class="form-text text-muted">Help text</small>
+        </div>
+        <div class="form-group">
+          <label for="password">Enter Password</label>
+          <input type="password" class="form-control" name="password" id="password" placeholder="Enter password...">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-    </div>
+        
+    </section>
 
 </div>
 </body>
