@@ -13,44 +13,96 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="winner-trophy-cup-prize-award-best-first-achievement-29309.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-            Bootstrap
-          </a>
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+
+    <section class="mb-4">
+        <div class="register">
+            <div class="row">
+                <div class="col-md-9 mb-md-0 mb-5">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="name" name="name" class="form-control"
+                                        placeholder="Enter name...">
+                                    <label for="name" class="">Your name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+
+                                    <input type="text" class="form-control" name="username" id="username"
+                                        aria-describedby="helpId" placeholder="Display name..." />
+                                    <label for="username">Username</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="password" id="password" name="password" class="form-control"
+                                        placeholder="Create Password">
+                                    <label for="password" class="">Create Password</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+
+                                    <input type="password" class="form-control" name="passConfirm" id="passConfirm"
+                                        aria-describedby="helpId" placeholder="Re-type your password" />
+                                    <label for="username">Confirm Password</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                    <div class="text-center text-md-left">
+                        <a class="btn btn-primary" onclick="">Register</a>
+                    </div>
+                    <div class="status"></div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p>Created by Joshua Taylor</p>
+                        </li>
+                        <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                            <p>Panther ID: 001-89-7831</p>
+                        </li>
+                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                            <p>Summer 2020</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </nav>
+    </section>
+    <i class="fa fa-space-shuttle" aria-hidden="true">Already a player?</i>
+    <section class="loginUser">
+        <div class="container">
+            <div class="row">
+                <i class="fas fa-h3    ">If this isn't your first time you can just go directly to the login section</i>
+            </div>
+
+            <form>
+                <div class="form-group">
+                    <label for="logUser">Already a member?</label>
+                    <input type="text" name="" id="logUser" class="form-control" placeholder="Username"
+                        aria-describedby="helpId">
+                    <small id="helpId" class="text-muted">Case Sensitive</small>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="logPass">Password</label>
+                    <input type="password" class="form-control" name="logPass" id="logPass"
+                        placeholder="Enter Password">
+                </div>
+                <div class="text-center text-md">
+                    <a class="btn btn-primary" onclick="">Login</a>
+                </div>
+
+            </form>
+
+        </div>
+    </section>
 </body>
 </html>

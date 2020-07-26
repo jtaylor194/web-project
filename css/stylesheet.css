@@ -1,65 +1,66 @@
 *{
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 body{
-    font-style: normal;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: lightseagreen;
-    margin: 0;
-    padding: 5px 5px 5px 5px;;
-
+  width: 100%;
+  background-color: powderblue;
+  margin: 0;
+  font-size: 1rem;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 20px;
+  justify-content: space-between;
 }
 
-.navBar{
-    overflow: hidden;
-    background-color: cornflowerblue;
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
-.navBar a {
-    float: right;
-    display: flex;
-    color: #210358;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-  }
-.navBar h2{
-    float: left;
-    display: flex;
-    color: white;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-}
-.navBar a:hover{
-    background-color: lightcyan;
-    color: darkslategray;
-    transition-duration: .5s;
-    transition-delay: .1s;
-}
-  
 
-  ul > li{
-    color: white;
-  }
-  section.loginUser{
-    display: block;
-    justify-content: center;
-    width: 500px;
-    border: solid white;
-  }
-  .register{
-    border: darkblue solid 5px;
-    padding-bottom: 20px;
-  }
-  .container{
-    padding-top: 100px;
-  }
-  .row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-  }
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  min-width: 0;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+
+}
+#reg{
+  border: black solid;
+
+}
+#login{
+  border: darkgray solid;
+  background-color: darkslateblue;
+}
+#create{
+  border: black solid;
+}
+#create > ul{
+  font-size: medium;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2 {
+  color: red;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
