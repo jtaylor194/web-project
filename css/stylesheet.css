@@ -23,12 +23,8 @@ hr {
 }
 
 .row {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  justify-content: center;
 }
 
 .col {
@@ -50,7 +46,8 @@ hr {
 }
 #login{
   border: darkgray solid;
-  background-color: darkslateblue;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
 }
 #create{
   border: black solid;
@@ -63,4 +60,11 @@ hr {
 h2 {
   color: red;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+form{
+  width: 50%;
+}
+footer{
+  position: relative;
+  justify-content: flex-end;
 }

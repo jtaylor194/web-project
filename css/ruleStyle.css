@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(253, 249, 231); 
+}
+.rule ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: black solid;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+}
+.rule li{
+    border: 5px solid  rgb(253, 249, 231);
+    margin: 1em;
+    padding: 1em;
+
+}
