@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="css/stylesheet.css ">
     <link rel="stylesheet" href="css/bootstrap.css">
     <title>Hand and Foot</title>
+    <style>
+        .form-1 .form-2{
+
+            float: left;
+            width: 300px;
+
+        }
+    </style>
 </head>
 
 <body>
@@ -40,26 +48,29 @@
     </nav>
 
     <div class="container">
-        <h2 class="h1-responsive font-weight-bold text-center my-4">Welcome to Hand n' Foot</h2>
-        <p class="text-center w-responsive mx-auto mb-5">This is a fun card game I have played with family and friends.
-            </p>
-        <div>
-            <div class="card">
-              <div class="card-body">
-                <blockquote class="blockquote">
-                  <p>If this is your first time checking out my game please Register before playing, if you've been here before please login.</p>
-                 
-                </blockquote>
-              </div>
-            </div>
+        <div class="form-1">
+            <form action="login.php" method="post">
+           <label for="email">Email:</label>
+  <input type="email" id="email" placeholder="Enter email" name="email">
+  <label for="pwd">Password:</label>
+  <input type="password" id="pwd" placeholder="Enter password" name="pswd">
+  <label>
+    <input type="checkbox" name="remember"> Remember me
+  </label>
+  <button type="submit">Submit</button>
+            </form>
         </div>
-        <div class="buttons">
-            <button class="btn">
-                    Register <span class="badge badge-primary"></span>
-            </button>
-            <button type="button" name="" id="" class="btn btn-primary" btn-lg btn-block" >
-                <a href="login-form.php">Login</a>
-            </button>
+        <div class="form-2">
+            <form action="registration.php" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter email" name="email">
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" placeholder="Enter password" name="pswd">
+                <label>
+                  <input type="checkbox" name="remember"> Remember me
+                </label>
+                <button type="submit">Submit</button>
+            </form>
         </div>
     </div>
 <hr>

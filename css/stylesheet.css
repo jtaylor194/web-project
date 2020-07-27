@@ -7,64 +7,74 @@ body{
   margin: 0;
   font-size: 1rem;
 }
-hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-}
-.container {
+
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-bottom: 20px;
-  justify-content: space-between;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
 }
 
-.row {
-  display: flex;
-  justify-content: center;
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
 }
 
-.col {
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  min-width: 0;
-  max-width: 100%;
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
 
-}
-#reg{
-  border: black solid;
 
-}
-#login{
-  border: darkgray solid;
-  padding-bottom: 30px;
-  margin-bottom: 50px;
-}
-#create{
-  border: black solid;
-}
-#create > ul{
-  font-size: medium;
-  font-weight: bold;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-h2 {
-  color: red;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-form{
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
   width: 50%;
+  opacity: 0.9;
 }
-footer{
-  position: relative;
-  justify-content: flex-end;
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+ 
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.wrapper{
+  justify-content: center;
+
+}
+.sep{
+  border-top: 2px solid darkblue;
+}
+.btn-pos button{
+  justify-content: center;
+  text-align: center;
+  float: right;
 }
